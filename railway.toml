@@ -1,0 +1,6 @@
+[build]
+builder = "nixpacks"
+buildCommand = "apt-get update && apt-get install -y python3-pip ffmpeg && pip3 install yt-dlp --break-system-packages && npm install"
+
+[deploy]
+startCommand = "npm start"
